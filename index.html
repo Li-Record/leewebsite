@@ -8,34 +8,164 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/all.css">
-    <title>Lee's WebSite</title>
+    <title>Lee's Website</title>
 </head>
 
 <body>
+    <!-- 首頁滿版背景 -->
+    <div class="jumbotron jumbotron-fluid bg-img bg-cover mb-0 d-flex align-items-center">
+        <div class="container">
+            <div class="text-shadow text-center text-light py-3">
+                <h1 class="display-3">Welcome To My Website</h1>
+                <p class="lead">My name is Lee , I'm a Front-end Developer.</p>
+            </div>
+            <ul class="nav justify-content-center icon-transition">
+                <li class="nav-item">
+                    <a class="nav-link text-light text-shadow" href="https://www.facebook.com/profile.php?id=100000488464277&ref=bookmarks" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light text-shadow" href="https://github.com/White12343" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="#">RESUME</a>
-                <a class="nav-item nav-link ml-3" href="#">AUTOBIOGRAPHY</a>
-                <a class="nav-item nav-link ml-3" href="#">SKILLS</a>
-                <a class="nav-item nav-link ml-3" href="#">WORKS</a>
-                <a class="nav-item nav-link ml-3" href="#">CONTACT</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#about">ABOUT</a>
+                    <a class="nav-item nav-link ml-3" href="#resume">RESUME</a>
+                    <a class="nav-item nav-link ml-3" href="#skills">SKILLS</a>
+                    <a class="nav-item nav-link ml-3" href="#works">WORKS</a>
+                    <a class="nav-item nav-link ml-3" href="#contactd">CONTACT</a>
+                </div>
             </div>
         </div>
     </nav>
-    <!--font awesome-->
-    <script src="https://kit.fontawesome.com/892efcd286.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- about -->
+    <div class="container mb-4" id="about">
+        <h3 class="text-center h2 mt-5 mb-3">ABOUT</h3>
+        <div class="slash-box">
+            <div class="slash"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-5 px-0 px-md-3">
+                <img class="img-fluid box-shadow" src="img/myphoto.jpeg" alt="photo">
+            </div>
+            <div class="col-md-7 py-3 py-md-0">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error suscipit quos esse praesentium officia hic ipsum veniam distinctio, tenetur sed. Perspiciatis nesciunt tempore quam impedit at expedita voluptas voluptatem eligendi.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero iste facilis quas ipsam sint quibusdam, itaque maiores totam sunt est dicta dolores unde esse labore, enim veniam doloremque blanditiis laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque laboriosam esse numquam, nisi tenetur, est fuga corporis dolores, quas voluptatibus illo exercitationem suscipit blanditiis sit asperiores vitae nostrum officia.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- RESUME -->
+    <div class="container-fluid bg-light" id="resume">
+        <div class="container py-2 mb-3">
+            <h3 class="text-center h2 mt-5 mb-3">RESUME</h3>
+            <div class="slash-box mb-5">
+                <div class="slash"></div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!-- skills -->
+    <div class="container-fluid" id="skills">
+        <div class="container py-2 mb-3">
+            <h3 class="text-center h2 mt-5 mb-3">SKILLS</h3>
+            <div class="slash-box mb-5">
+                <div class="slash"></div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mb-4">
+                        <div class="card w-100 box-shadow border-0" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML / CSS</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card w-100 box-shadow border-0" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card w-100 box-shadow border-0" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Git</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card w-100 box-shadow border-0" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Framework</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- works -->
+        <div class="container-fluid bg-light" id="works">
+            <div class="container py-2 mb-3">
+                <h3 class="text-center h2 mt-5 mb-3">WORKS</h3>
+                <div class="slash-box mb-5">
+                    <div class="slash"></div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <!-- RESUME -->
+        <div class="container-fluid" id="contact">
+            <div class="container py-2 mb-3">
+                <h3 class="text-center h2 mt-5 mb-3">CONTACT</h3>
+                <div class="slash-box mb-5">
+                    <div class="slash"></div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="py-4 bg-secondary">
+            <div class="text-center text-light">
+                Copyright © 2019 by Yi Ming Lee
+            </div>
+        </footer>
+        <!--font awesome-->
+        <script src="https://kit.fontawesome.com/892efcd286.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
