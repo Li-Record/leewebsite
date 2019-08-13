@@ -5,7 +5,7 @@
 }
 
 .bg-navbar {
-	background-color: rgba(255, 255, 255, .9)
+    background-color: rgba(255, 255, 255, .9)
 }
 
 .box-shadow {
@@ -17,7 +17,7 @@
 }
 
 .btn {
-	border-width: 2px;
+    border-width: 2px;
 }
 
 .bg-img {
@@ -27,6 +27,12 @@
     width: 100vw;
 }
 
+/* @media (min-width: 768px) {
+    .bg-img {
+        background-image: url('../img/jose-alejandro-cuffia-_4815u_ACqQ-unsplash.jpg');
+    }
+}
+ */
 .icon-transition a {
     transition: all .3s;
 }
