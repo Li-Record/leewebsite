@@ -19,10 +19,10 @@
     <div class="jumbotron jumbotron-fluid bg-img bg-cover mb-0 d-flex align-items-center">
         <div class="container">
             <div class="text-shadow text-center text-light py-3">
-                <h1 class="display-3">Welcome To My Website</h1>
-                <p class="lead">My name is Lee , I'm a Front-end Developer.</p>
+                <h1 class="display-3 ">Welcome To My Website</h1>
+                <p class="lead ">My name is Lee , I'm a Front-end Developer.</p>
             </div>
-            <ul class="nav justify-content-center icon-transition">
+            <ul class="nav justify-content-center icon-transition ">
                 <li class="nav-item">
                     <a class="nav-link text-light text-shadow" href="https://www.facebook.com/profile.php?id=100000488464277&ref=bookmarks" target="_blank">
                         <i class="fab fa-facebook fa-2x"></i>
@@ -39,17 +39,19 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-navbar sticky-top mb-3">
         <div class="container">
-            <a class="navbar-brand" href="#">HOME</a>
+            <a class="navbar-brand" href="index.html">HOME</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="#about">ABOUT</a>
-                    <a class="nav-item nav-link ml-lg-3" href="#skills">SKILLS</a>
-                    <a class="nav-item nav-link ml-lg-3" href="#exp">EXPERIENCE</a>
-                    <a class="nav-item nav-link ml-lg-3" href="#works">WORKS</a>
-                    <a class="nav-item nav-link ml-lg-3" href="#contactd">CONTACT</a>
+                    <a class="nav-item nav-link elTop" href="#about">ABOUT</a>
+                    <a class="nav-item nav-link ml-lg-3 elTop" href="#skills">SKILLS</a>
+                    <a class="nav-item nav-link ml-lg-3 elTop" href="#exp">EXPERIENCE</a>
+                    <a class="nav-item nav-link ml-lg-3 elTop" href="#works">WORKS</a>
+                    <a class="nav-item nav-link ml-lg-3 elTop" href="#contact">CONTACT</a>
+                    <div class="align-self-center border ml-lg-3 d-none d-lg-inline-block" style="height: 1rem;"></div>
+                    <a class="nav-item nav-link ml-lg-3" href="https://medium.com/lees-前端筆記">BLOG</a>
                 </div>
             </div>
         </div>
@@ -144,7 +146,7 @@
                 <div class="col-md-6">
                     <h5>高雄旅遊資訊網</h5>
                     <small>Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias deserunt numquam, alias nihil aspernatur iste a! Beatae, quisquam? Amet voluptate sapiente odio unde, sequi nemo laboriosam minima qui enim necessitatibus!</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias deserunt numquam, alias nihil aspernatur iste a! Beatae, quisquam? Amet voluptate sapiente odio unde, sequi nemo laboriosam minima qui enim necessitatibus!</p>
                     <a href="#" class="btn btn-outline-success btn-sm">作品連結</a>
                     <a href="#" class="btn btn-outline-warning btn-sm">程式碼連結</a>
                 </div>
@@ -157,7 +159,7 @@
                 <div class="col-md-6 order-2 order-md-1">
                     <h5>BMI 紀錄</h5>
                     <small>Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias deserunt numquam, alias nihil aspernatur iste a! Beatae, quisquam? Amet voluptate sapiente odio unde, sequi nemo laboriosam minima qui enim necessitatibus!</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias deserunt numquam, alias nihil aspernatur iste a! Beatae, quisquam? Amet voluptate sapiente odio unde, sequi nemo laboriosam minima qui enim necessitatibus!</p>
                     <a href="#" class="btn btn-outline-success btn-sm">作品連結</a>
                     <a href="#" class="btn btn-outline-warning btn-sm">程式碼連結</a>
                 </div>
@@ -165,18 +167,35 @@
         </div>
     </div>
     <!-- contact -->
-    <div class="container-fluid py-3 mb-4" id="contact">
+    <div class="container-fluid py-5 mb-4" id="contact">
         <div class="container py-2 mb-3">
             <h3 class="text-center h2 my-3">CONTACT</h3>
             <div class="slash-box mb-5">
                 <div class="slash"></div>
             </div>
-            <div class="row">
+            <div class="card mx-auto border-0" style="width: 20rem;">
+                <img src="img/contact.jpeg" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
+                <div class="card-body pb-0">
+                    <ul class="list-group text-center">
+                        <li class="list-group-item border-0">
+                            <i class="far fa-user"></i>
+                            <span class="ml-2">李翊銘 / Yi Ming Lee</span>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="far fa-envelope"></i>
+                            <span class="ml-2">white11190709@gmail.com</span>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="ml-2">0983-191-227</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <!-- footer -->
-    <footer class="py-4 bg-secondary">
+    <footer class="py-5 bg-secondary">
         <div class="text-center text-light">
             Copyright © 2019 by Yi Ming Lee
         </div>
@@ -188,6 +207,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
