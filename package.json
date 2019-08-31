@@ -1,0 +1,22 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/White12343/leewebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/White12343/leewebsite/issues"
+  },
+  "homepage": "https://github.com/White12343/leewebsite#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  }
+}

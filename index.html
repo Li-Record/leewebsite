@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/all.css">
     <title>Lee's Website</title>
 </head>
 
 <body>
     <!-- 首頁滿版背景 -->
-    <div class="jumbotron jumbotron-fluid bg-img bg-cover mb-0 d-flex align-items-center">
-        <div class="container">
+    <header class="jumbotron jumbotron-fluid bg-img bg-cover mb-0">
+        <div class="header-slogan">
             <div class="text-shadow text-center text-light py-3">
-                <h1 class="display-3 ">Welcome To My Website</h1>
+                <h1 class="display-4 mb-3">Welcome To My Website</h1>
                 <p class="lead ">My name is Lee , I'm a Front-end Developer.</p>
             </div>
             <ul class="nav justify-content-center icon-transition ">
@@ -35,167 +35,207 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-navbar sticky-top mb-3">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">HOME</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link elTop" href="#about">ABOUT</a>
-                    <a class="nav-item nav-link ml-lg-3 elTop" href="#skills">SKILLS</a>
-                    <a class="nav-item nav-link ml-lg-3 elTop" href="#exp">EXPERIENCE</a>
-                    <a class="nav-item nav-link ml-lg-3 elTop" href="#works">WORKS</a>
-                    <a class="nav-item nav-link ml-lg-3 elTop" href="#contact">CONTACT</a>
-                    <div class="align-self-center border ml-lg-3 d-none d-lg-inline-block" style="height: 1rem;"></div>
-                    <a class="nav-item nav-link ml-lg-3" href="https://medium.com/lees-前端筆記">BLOG</a>
+    </header>
+    <main>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-navbar sticky-top mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link elTop" href="#about">ABOUT</a>
+                        <a class="nav-item nav-link ml-lg-3 elTop" href="#skills">SKILLS</a>
+                        <a class="nav-item nav-link ml-lg-3 elTop" href="#works">WORKS</a>
+                        <a class="nav-item nav-link ml-lg-3 elTop" href="#contact">CONTACT</a>
+                        <div class="align-self-center border ml-lg-3 d-none d-lg-inline-block" style="height: 1rem;"></div>
+                        <a class="nav-item nav-link ml-lg-3" href="https://medium.com/lees-前端筆記">BLOG</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- about -->
-    <div class="container py-3 mb-4" id="about">
-        <h3 class="text-center h2 my-3">ABOUT</h3>
-        <div class="slash-box">
-            <div class="slash"></div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-5 px-0 px-md-3">
-                <img class="img-fluid box-shadow" src="img/myphoto.jpeg" alt="photo">
-            </div>
-            <div class="col-md-7 py-3 py-md-0">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error suscipit quos esse praesentium officia hic ipsum veniam distinctio, tenetur sed. Perspiciatis nesciunt tempore quam impedit at expedita voluptas voluptatem eligendi.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero iste facilis quas ipsam sint quibusdam, itaque maiores totam sunt est dicta dolores unde esse labore, enim veniam doloremque blanditiis laborum.
-                </p>
-                <a href="#" class="btn btn-outline-success btn-sm">履歷</a>
-            </div>
-        </div>
-    </div>
-    <!-- skills -->
-    <div class="container-fluid bg-light py-3 mb-4" id="skills">
-        <div class="container mb-3">
-            <h3 class="text-center h2 my-3">SKILLS</h3>
-            <div class="slash-box mb-5">
-                <div class="slash"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>HTML / CSS</h4>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis!</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, repudiandae!</li>
-                    </ul>
+        </nav>
+        <article>
+            <!-- about -->
+            <section class="container py-3 mb-4" id="about">
+                <h3 class="text-center h2 my-3">ABOUT</h3>
+                <div class="slash-box">
+                    <div class="slash"></div>
                 </div>
-                <div class="col-md-4">
-                    <h4>JavaScript</h4>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis!</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, repudiandae!</li>
-                    </ul>
+                <div class="row mt-5 animate-right">
+                    <div class="col-md-5 px-0 px-md-3">
+                        <img class="img-fluid box-shadow" src="img/myphoto.jpeg" alt="photo">
+                    </div>
+                    <div class="col-md-7 py-3 py-md-0 align-self-center">
+                        <p class="mb-3">
+                            您好，我是<span class="h4">李翊銘</span>，今年五月決定離職，讓自己投入更多時間在網頁前端上面，在之前一直都是利用假日閒暇時間自學。
+                        </p>
+                        <p class="mb-3">
+                            在深入到網頁前端之後，才了解這片領域有多廣大，也得時時刻刻督促自己學習並了解新技術，也因此我自己也慢慢培養出興趣，每當根據自己的想法寫出乾淨且可行的程式碼，都能帶給我極大的成就感。
+                        </p>
+                        <p class="mb-3">
+                            對於工作，我也一直認為團隊合作與溝通能力是非常重要的，除了能提高效率，也能讓自己和團隊持續進步。
+                        </p>
+                        <a href="https://github.com/White12343/resume" class="btn btn-outline-success btn-sm" target="_blank">一頁式履歷</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Framework</h4>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis!</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, repudiandae!</li>
-                    </ul>
+            </section>
+            <!-- skills -->
+            <section class="container-fluid bg-light py-5 mb-4" id="skills">
+                <div class="container mb-3">
+                    <h3 class="text-center h2 my-3">SKILLS</h3>
+                    <div class="slash-box mb-5">
+                        <div class="slash"></div>
+                    </div>
+                    <div class="w-100 w-md-75 mx-auto">
+                        <h4 class="h4">HTML / CSS</h4>
+                        <small class="text-secondary">熟悉基本語法 / HTML 5 語意化標籤 /能純手刻版面 / 規劃 RWD 網頁</small>
+                        <div class="progress mt-2" style="height: 30px">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50"aria-valuemin="0" aria-valuemax="100" data-progress="80" style="width: 0%">80%</div>
+                        </div>
+                        <h4 class="h4 mt-3">SASS / SCSS</h4>
+                        <small class="text-secondary">基本編譯方式 / 了解基礎變數、import、mixin 方法</small>
+                        <div class="progress mt-2" style="height: 30px">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-progress="60" style="width: 0%" >60%</div>
+                        </div>
+                        <h4 class="h4 mt-3">Bootstrap 4</h4>
+                        <small class="text-secondary">了解基本架構 / Grid System / 運用元件客製所需版面 </small>
+                        <div class="progress mt-2" style="height: 30px">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-progress="60" style="width: 0%">60%</div>
+                        </div>
+                        <h4 class="h4 mt-3">JavaScript</h4>
+                        <small class="text-secondary">熟悉基礎 ( 變數、判斷式、迴圈、函式等等 ) / DOM 元素的操作 / AJAX 非同步取得資料 / 串接 api</small>
+                        <div class="progress mt-2" style="height: 30px">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-progress="70" style="width: 0%">70%</div>
+                        </div>
+                        <h4 class="h4 mt-3">jQuery</h4>
+                        <small class="text-secondary">了解基礎語法 / 適時的運用提高開發效率</small>
+                        <div class="progress mt-2" style="height: 30px">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-progress="60" style="width: 0%">60%</div>
+                        </div>
+                        <h4 class="h4 mt-3">Git</h4>
+                        <small class="text-secondary">基本操作指令 / 版本控管 / 建立分支 / 處理合併衝突</small>
+                        <div class="progress mt-2" style="height: 30px">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-progress="70" style="width: 0%">70%</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Git</h4>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis!</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, repudiandae!</li>
-                    </ul>
+            </section>
+            <!-- work -->
+            <section class="container-fluid py-3 mb-4" id="works">
+                <div class="container py-2 mb-3">
+                    <h3 class="text-center h2 my-3">WORKS</h3>
+                    <div class="slash-box mb-5">
+                        <div class="slash"></div>
+                    </div>
+                    <div class="row animate-left">
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="https://white12343.github.io/todo-list/" target="_blank">
+                                <img class="rounded box-shadow works-item img-fluid" src="img/todo.png" alt="todolist">
+                            </a>
+                            <h5 class="h5 mt-3">
+                                <span class="mr-1"><i class="fas fa-hashtag"></i></span>
+                                Todo list
+                            </h5>
+                            <small class="text-secondary font-italic">
+                                <span class="mr-1">
+                                    <i class="fas fa-tag"></i>
+                                </span>
+                                Bootstrap / jQuery / JavaScript
+                            </small>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="https://white12343.github.io/clock/" target="_blank">
+                                <img class="rounded box-shadow works-item img-fluid" src="img/clock.png" alt="clock">
+                            </a>
+                            <h5 class="h5 mt-3">
+                                <span class="mr-1"><i class="fas fa-hashtag"></i></span>
+                                Clock
+                            </h5>
+                            <small class="text-secondary font-italic">
+                                <span class="mr-1">
+                                    <i class="fas fa-tag"></i>
+                                </span>
+                                HTML / CSS / Bootstrap / JavaScript
+                            </small>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="https://white12343.github.io/Kaohsiung-Travel/" target="_blank">
+                                <img class="rounded box-shadow works-item img-fluid" src="img/khs.png" alt="">
+                            </a>
+                            <h5 class="h5 mt-3">
+                                <span class="mr-1"><i class="fas fa-hashtag"></i></span>
+                                高雄旅遊資訊
+                            </h5>
+                            <small class="text-secondary font-italic">
+                                <span class="mr-1">
+                                    <i class="fas fa-tag"></i>
+                                </span>
+                                JavaScript / AJAX
+                            </small>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- exp -->
-    <div class="container-fluid py-3 mb-4" id="exp">
-        <div class="container py-2 mb-3">
-            <h3 class="text-center h2 my-3">EXPERIENCE</h3>
-            <div class="slash-box mb-5">
-                <div class="slash"></div>
-            </div>
-            <div class="row">
-            </div>
-        </div>
-    </div>
-    <!-- works -->
-    <div class="container-fluid bg-light py-3 mb-4" id="works">
-        <div class="container px-0 px-md-3">
-            <h3 class="text-center h2 my-3">WORKS</h3>
-            <div class="slash-box mb-5">
-                <div class="slash"></div>
-            </div>
-            <!-- 作品一 -->
-            <div class="row mb-5">
-                <div class="col-md-6 mb-4 px-0 px-md-3">
-                    <img src="img/khc_ajax.jpeg" class="img-fluid box-shadow" alt="">
+            </section>
+            <!-- contact -->
+            <section class="container-fluid bg-secondary text-light py-5" id="contact">
+                <div class="container py-2 mb-3">
+                    <h3 class="text-center h2 my-3">CONTACT</h3>
+                    <div class="slash-box mb-5">
+                        <div class="slash"></div>
+                    </div>
+                    <div class="row justify-content-around text-center">
+                        <div class="col-md-4 animate-left mb-5 mb-md-0">
+                            <h4 class="h4 mb-4">Contact info</h4>
+                            <ul>
+                                <li class="py-2">
+                                    <span class="mr-2">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </span>
+                                    <a class="text-light" href="tel:0983-191-227">0983-191-227</a>
+                                </li>
+                                <li class="py-2">
+                                    <span class="mr-2">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                    <a class="text-light" href="mailto:white11190709@gmail.com">white11190709@gmail.com</a>
+                                </li>
+                                <li class="py-2">
+                                    <span class="mr-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    Lujhou Dist, New Taipei City , Taiwan
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 animate-right">
+                            <h4 class="h4 mb-4">Social Links</h4>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" target="_blank" href="https://www.facebook.com/profile.php?id=100000488464277&ref=bookmarks">
+                                        <i class="fab fa-2x fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" target="_blank" href="https://github.com/White12343">
+                                        <i class="fab fa-2x fa-github-square"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" target="_blank" href="https://medium.com/lees-前端筆記">
+                                        <i class="fab fa-2x fa-medium"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h5>高雄旅遊資訊網</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias deserunt numquam, alias nihil aspernatur iste a! Beatae, quisquam? Amet voluptate sapiente odio unde, sequi nemo laboriosam minima qui enim necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-success btn-sm">作品連結</a>
-                    <a href="#" class="btn btn-outline-warning btn-sm">程式碼連結</a>
-                </div>
-            </div>
-            <!-- 作品二 -->
-            <div class="row mb-5">
-                <div class="col-md-6 mb-4 px-0 px-md-3 order-1 order-md-2">
-                    <img src="img/bmi_localstorage.jpeg" class="img-fluid box-shadow" alt="">
-                </div>
-                <div class="col-md-6 order-2 order-md-1">
-                    <h5>BMI 紀錄</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias deserunt numquam, alias nihil aspernatur iste a! Beatae, quisquam? Amet voluptate sapiente odio unde, sequi nemo laboriosam minima qui enim necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-success btn-sm">作品連結</a>
-                    <a href="#" class="btn btn-outline-warning btn-sm">程式碼連結</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact -->
-    <div class="container-fluid py-5 mb-4" id="contact">
-        <div class="container py-2 mb-3">
-            <h3 class="text-center h2 my-3">CONTACT</h3>
-            <div class="slash-box mb-5">
-                <div class="slash"></div>
-            </div>
-            <div class="card mx-auto border-0" style="width: 20rem;">
-                <img src="img/contact.jpeg" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
-                <div class="card-body pb-0">
-                    <ul class="list-group text-center">
-                        <li class="list-group-item border-0">
-                            <i class="far fa-user"></i>
-                            <span class="ml-2">李翊銘 / Yi Ming Lee</span>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <i class="far fa-envelope"></i>
-                            <span class="ml-2">white11190709@gmail.com</span>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span class="ml-2">0983-191-227</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+            </section>
+        </article>
+    </main>
     <!-- footer -->
-    <footer class="py-5 bg-secondary">
+    <footer class="py-3 bg-dark">
         <div class="text-center text-light">
             Copyright © 2019 by Yi Ming Lee
         </div>
