@@ -1,0 +1,23 @@
+.bg-img {
+    background-image: url('../img/banner-md.jpeg');
+    height: 100vh;
+}
+
+.icon-transition a {
+    transition: all .3s;
+}
+
+@media (min-width: 768px) {
+    .bg-img {
+        background-image: url('../img/banner.jpg');
+        background-attachment: fixed;
+    }
+}
+
+.text-shadow {
+    text-shadow: #333 0.5em 0.5em 0.5em;
+}
+
+.header-slogan {
+    @include allCenter;
+}

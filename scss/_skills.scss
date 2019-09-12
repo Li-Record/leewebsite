@@ -1,0 +1,16 @@
+#skills {
+    .bg-info {
+        background-color: #86c1a7 !important;
+    }
+
+    @media (min-width: 576px) {
+        .w-md-75 {
+            width: 75% !important;
+        }
+    }
+
+    .progress-bar {
+        transition: width 1.5s;
+    }
+
+}

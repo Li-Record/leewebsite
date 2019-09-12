@@ -60,17 +60,6 @@ a {
   background-position: center center;
   background-size: cover; }
 
-.header-slogan {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.main {
-  background-color: #fff; }
-
 .bg-navbar {
   background-color: rgba(255, 255, 255, 0.9); }
 
@@ -81,29 +70,11 @@ a {
   -o-transition: all .3s;
   transition: all .3s; }
 
-.works-item:hover {
-  -webkit-box-shadow: 4px 4px 10px gray;
-  box-shadow: 4px 4px 10px gray; }
-
-.text-shadow {
-  text-shadow: #333 0.5em 0.5em 0.5em; }
+.main {
+  background-color: #fff; }
 
 .btn {
   border-width: 2px; }
-
-.bg-img {
-  background-image: url("../img/banner-md.jpeg");
-  height: 100vh; }
-
-@media (min-width: 768px) {
-  .bg-img {
-    background-image: url("../img/banner.jpg");
-    background-attachment: fixed; } }
-
-.icon-transition a {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
 
 .slash-box {
   width: 120px;
@@ -119,14 +90,46 @@ a {
   background: -o-repeating-linear-gradient(45deg, #86c1a7, #f8f9fa);
   background: repeating-linear-gradient(45deg, #86c1a7, #f8f9fa); }
 
-.bg-info {
+.bg-img {
+  background-image: url("../img/banner-md.jpeg");
+  height: 100vh; }
+
+.icon-transition a {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+@media (min-width: 768px) {
+  .bg-img {
+    background-image: url("../img/banner.jpg");
+    background-attachment: fixed; } }
+
+.text-shadow {
+  text-shadow: #333 0.5em 0.5em 0.5em; }
+
+.header-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+#about p {
+  line-height: 1.5; }
+
+.works-item:hover {
+  -webkit-box-shadow: 4px 4px 10px gray;
+  box-shadow: 4px 4px 10px gray; }
+
+#skills .bg-info {
   background-color: #86c1a7 !important; }
 
 @media (min-width: 576px) {
-  .w-md-75 {
+  #skills .w-md-75 {
     width: 75% !important; } }
 
-.progress-bar {
+#skills .progress-bar {
   -webkit-transition: width 1.5s;
   -o-transition: width 1.5s;
   transition: width 1.5s; }
